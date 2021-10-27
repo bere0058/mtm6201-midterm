@@ -1,0 +1,255 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, a,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: unset;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 26px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End css resset */
+/* Adding general style to main sections */
+body {
+	font-family: 'Roboto Slab', serif;
+}
+header {
+	font-family: 'Space Grotesk', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	color: #3a243b;
+}
+footer {
+	font-family: 'Roboto Condensed', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #89ba66;
+	padding: 4%;
+}
+/* Adding style to links and titles */
+a {
+	font-family: 'Poppins', sans-serif;
+	color: #844587;
+}
+h1, h2, h3, h4 {
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 180%;
+	font-weight: normal;
+	align-content: center;
+}
+h2 > b {
+	color: #844587;
+	font-weight: bold;
+}
+h3 {
+	font-size: 170%;
+	background-color: #d4d08c;
+	padding: 4%;
+}
+h4 {
+	font-size: 140%;
+	padding: 5%;
+	background-color: #2d3b24;
+	color: #89ba66;
+}
+/* Adding general style to both desktop and mobile version */
+/* General style for Nav */
+nav {	
+	padding: 3% 0 2% 0;
+	background-color: #548635;
+}
+nav > .navcontent {
+	display: grid;
+}
+nav > .navcontent > li {
+	padding: 3% 6% 6% 6%;
+	background-color:#89ba66;
+	color: #844587;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	text-decoration: underline 40%;
+	text-underline-offset: 50%;
+}
+/* General style for Banner */
+header {
+	position: relative;
+	justify-content: right;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
+	justify-items: end;
+}
+header > img {
+	height: fit-content;
+	grid-area: 1 / 1 / 3 / 1;
+}
+header > .bann {
+	display: flex;
+	align-items: center;
+}
+header > .a {
+	grid-area: 1 / 1 / 1 / 1;
+	background-color: #9baa59a1;
+}
+header > .b {
+	grid-area: 2 / 1 / 2 / 1;
+	padding: 0 7%;
+	width: 16%;
+	background-color: #84458793;
+}
+header > .b > div {
+	background-color: #89ba66;
+	padding: 0% 10%;
+	height: 100%;
+	display: flex;
+}
+/* General style for New Flavour section */
+section {
+	display: grid;
+}
+section :nth-child(3) {
+	box-shadow: 0px 15px 15px -15px #111;
+}
+section > article {	
+	display: flex;
+}
+section > article > div {
+	background-color: #844587;
+	color: aliceblue;
+}
+section > article > div > p {
+	padding: 5%;
+}
+#banner, #strawberry, #multiflavour, #serious {
+	width: 100%;
+}
+/* Adding general style to Footer */
+footer > .fcontent, .fsocial-media {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 3%;
+}
+.fsocial-media .fa {
+	padding: 30%;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border: solid rgba(255, 255, 255, 0.651) 3px;
+	border-radius: 50%;
+	background-color: #89ba66;
+}
+.fa:hover {
+	cursor: pointer;
+	background-color: #aece97;
+}
+/* Adding style to desktop version */
+/* Adding style to nav bar */
+.desktop .navcontent {
+    grid-template-columns: repeat(3, 1fr);
+}
+/* Adding style to Banner */
+.desktop > header > .a {
+	width: 30%;
+}	
+/* Adding style to New Flavour section */
+.desktop > section {
+	grid-template-rows: repeat(3, 1fr);
+}
+.desktop > section > article > div {
+	width: 50%;
+}
+/* Adding style to Footer */
+.desktop .fcontent {
+	width: 70%;
+}
+.desktop .fsocial-media {
+	width: 20%;
+}
+/* setting up media queries */
+@media screen and (max-width: 768px) {
+	.desktop {
+		display: none
+	}
+}
+@media screen and (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+}
+/* Adding style to mobile version */
+.mobile {
+	font-size: 70%;
+}
+/* Adding style to Nav */
+.mobile .navcontent {
+	grid-template-rows: repeat(3, 1fr);
+}
+/* Adding style to Banner */
+.mobile > header > .bann {
+	width: 100%;
+	justify-content: center;
+	padding: 0px;
+}	
+.mobile > header > .b > div {
+	background-color: #89ba6662;
+}
+/* Adding style to Flavour section */
+.mobile > section {
+	grid-template-rows: repeat(3, 1fr);
+}
+.mobile > section > article {
+	grid-template-rows: repeat(2, 1fr);
+	display: grid;
+	margin-bottom: -7%;
+}	
+.mobile > section > article :nth-child(1) {
+	margin-bottom: -1%;
+}

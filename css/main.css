@@ -61,7 +61,8 @@ footer {
 	align-items: center;
 	justify-content: center;
 	background-color: #89ba66;
-	padding: 4%;
+	padding: 2% 6%;
+	text-align: center;
 }
 /* Adding style to links and titles */
 a {
@@ -167,20 +168,19 @@ section > article > div {
 section > article > div > p {
 	padding: 5%;
 }
-#banner, #strawberry, #multiflavour, #serious {
-	width: 100%;
-}
 /* Adding general style to Footer */
 footer > .fcontent, .fsocial-media {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 3%;
 }
+footer > ul > li {
+	align-self: center;
+}
 .fsocial-media .fa {
 	padding: 30%;
 	font-size: 100%;
 	font-weight: bold;
-	text-align: center;
 	text-decoration: none;
 	border: solid rgba(255, 255, 255, 0.651) 3px;
 	border-radius: 50%;
@@ -189,6 +189,13 @@ footer > .fcontent, .fsocial-media {
 .fa:hover {
 	cursor: pointer;
 	background-color: #aece97;
+}
+/* Adding general style to images */
+#logo {
+	width: 50%;
+}
+#banner, #strawberry, #multiflavour, #serious {
+	width: 100%;
 }
 /* Adding style to desktop version */
 /* Adding style to nav bar */
@@ -211,7 +218,7 @@ footer > .fcontent, .fsocial-media {
 	width: 70%;
 }
 .desktop .fsocial-media {
-	width: 20%;
+	width: 30%;
 }
 /* setting up media queries */
 @media screen and (max-width: 768px) {

@@ -80,6 +80,10 @@ nav {
 	text-decoration: underline 40%;
 	text-underline-offset: 50%;
 }
+.navcontent > li :hover {
+	cursor: pointer;
+	background-color: #d4d08c;
+}
 /* Adding style to the main section */
 section {
 	padding: 0 5%;
@@ -106,6 +110,11 @@ section > article > div > h3 {
 section > article > div > p {
 	padding: 5%;
 	align-self: center;
+}
+.disclaimer {
+	padding: 1% 5%;
+	display: flex;
+	justify-content: right;
 }
 /* Adding style to Footer */
 footer {
@@ -180,7 +189,7 @@ h4 {
 	color: #89ba66;
 }
 /* Adding style to images */
-#logo1, #logo2 {
+#logo {
 	width: 50%;
 }
 #yellow, #strawberry, #chrsitmas {
@@ -205,5 +214,8 @@ h4 {
 	}
 	.fsocial-media > li > div {
 		padding: 10%;
+	}
+	#logo {
+		width: 25%;
 	}
 }

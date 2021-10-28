@@ -16,9 +16,9 @@
         <!-- Nav bar -->
         <nav role="navigation">
             <ul class="navcontent">
-                <li><a href="">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="menu/index.html">Menu</a></li>
-                <li><a href="">Gallery</a></li>
+                <li><a href="gallery/index.html">Gallery</a></li>
             </ul>
         </nav>
         <!-- Header as the "Banner" -->
@@ -35,7 +35,29 @@
         <div class="titles"><h3>New Flavors&#33;</h3></div>
         <section class="info" role="complementary">
             <article role="article">
-                <div><img id="serious" src="img/serious.jpeg" alt="vainilla-ice-cream"></div>
+                <div>
+                    <picture>
+                        <source srcset="
+                        img/serious-derivatives/serious-144_x_95.jpeg 240w,
+                        img/serious-derivatives/serious-240_x_159.jpeg 240w,
+                        img/serious-derivatives/serious-320_x_213.jpeg 320w,
+                        img/serious-derivatives/serious-480_x_320.jpeg 480w,
+                        img/serious-derivatives/serious-640_x_426.jpeg 640w,
+                        img/serious-derivatives/serious-720_x_480.jpeg 720w,
+                        img/serious-derivatives/serious-960_x_640.jpeg 960w"
+                        sizes="
+                        (max-width: 144px) 144px,
+                        (max-width: 240px) 240px,
+                        (max-width: 320px) 320px,
+                        (max-width: 480px) 480px,
+                        (max-width: 640px) 640px,
+                        (max-width: 720px) 720px,
+                        (max-width: 960px) 960px"
+                        media="(min-width: 320px)">
+                        <img id="serious" src="img/serious-derivatives/serious.jpeg" alt="vainilla-ice-cream">
+                    </picture>   
+                    <p class="disclaimer">Image from Sebastian Coman Photography on <a href="https://unsplash.com/">unsplash</a></p>
+                </div>
                 <div>                    
                     <h4>Serious Three</h4>
                     <p>Serious Three is ideal for when you're in thinking mode. It's presented in chocolate and vainilla flavours</p>
@@ -46,10 +68,54 @@
                     <h4>Moody Glass</h4>
                     <p>If you aren't sure what you want to try, then Moody Glass is for you. It's presented in strawberry, mango and raspberry, our most popular flavours</p>
                 </div> 
-                <div class="image"><img id="multiflavour" src="img/multiflavour.jpeg" alt="multiflavour-ice-cream"></div>
+                <div class="image">
+                    <picture>                        
+                        <source srcset="
+                        img/multiflavour-derivatives/multiflavour-144_x_95.jpeg 240w,
+                        img/multiflavour-derivatives/multiflavour-240_x_159.jpeg 240w,
+                        img/multiflavour-derivatives/multiflavour-320_x_213.jpeg 320w,
+                        img/multiflavour-derivatives/multiflavour-480_x_320.jpeg 480w,
+                        img/multiflavour-derivatives/multiflavour-640_x_426.jpeg 640w,
+                        img/multiflavour-derivatives/multiflavour-720_x_480.jpeg 720w,
+                        img/multiflavour-derivatives/multiflavour-960_x_640.jpeg 960w"
+                        sizes="
+                        (max-width: 144px) 144px,
+                        (max-width: 240px) 240px,
+                        (max-width: 320px) 320px,
+                        (max-width: 480px) 480px,
+                        (max-width: 640px) 640px,
+                        (max-width: 720px) 720px,
+                        (max-width: 960px) 960px"
+                        media="(min-width: 320px)">
+                        <img id="multiflavour" src="img/multiflavour-derivatives/multiflavour.jpeg" alt="multiflavour-ice-cream">
+                    </picture>
+                    <p class="disclaimer">All images from Sebastian Coman Photography on <a href="https://unsplash.com/">unsplash</a></p>
+                </div>
             </article>
             <article role="article">
-                <div><img id="strawberry" src="img/strawberry.jpeg" alt="strawberry-ice-cream"></div>
+                <div>
+                    <picture>
+                        <source srcset="
+                        img/strawberry-derivatives/strawberry-144_x_94.jpeg 240w,
+                        img/strawberry-derivatives/strawberry-240_x_158.jpeg 240w,
+                        img/strawberry-derivatives/strawberry-320_x_211.jpeg 320w,
+                        img/strawberry-derivatives/strawberry-480_x_317.jpeg 480w,
+                        img/strawberry-derivatives/strawberry-640_x_423.jpeg 640w,
+                        img/strawberry-derivatives/strawberry-720_x_476.jpeg 720w,
+                        img/strawberry-derivatives/strawberry-960_x_635.jpeg 960w"
+                        sizes="
+                        (max-width: 144px) 144px,
+                        (max-width: 240px) 240px,
+                        (max-width: 320px) 320px,
+                        (max-width: 480px) 480px,
+                        (max-width: 640px) 640px,
+                        (max-width: 720px) 720px,
+                        (max-width: 960px) 960px"
+                        media="(min-width: 320px)">                       
+                        <img id="strawberry" src="img/strawberry-derivatives/strawberry.jpeg" alt="strawberry-ice-cream">
+                    </picture>
+                    <p class="disclaimer">All images from Sebastian Coman Photography on <a href="https://unsplash.com/">unsplash</a></p>
+                </div>
                 <div>                
                     <h4>Passion Bowl</h4>
                     <p>Want to spicy things up a bit with your better half? Then Passion Bowl is the right choice. It's presented just in strawberry with mapple sirup</p>
@@ -59,7 +125,7 @@
     <!-- Footer section -->
     <footer role="contentinfo">       
         <ul class="fcontent">                
-            <li><img id="logo1" src="img/logo.png" alt="logo"></li>
+            <li><img id="logo" src="img/logo.png" alt="logo"></li>
             <li><p>About Us</p></li>
             <li><p>Employment</p></li>
             <li><p>Contact Us</p></li>

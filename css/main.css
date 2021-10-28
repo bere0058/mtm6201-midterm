@@ -119,6 +119,10 @@ nav {
 	text-decoration: underline 40%;
 	text-underline-offset: 50%;
 }
+.navcontent > li :hover {
+	cursor: pointer;
+	background-color: #d4d08c;
+}
 /* style for Banner */
 header {
 	position: relative;
@@ -132,22 +136,22 @@ header > img {
 	height: fit-content;
 	grid-area: 1 / 1 / 3 / 1;
 }
-header > .bann {
+.bann {
 	display: flex;
 	align-items: center;
 }
-header > .a {
+.a {
 	grid-area: 1 / 1 / 1 / 1;
 	background-color: #9baa59a1;
 	width: 30%;
 }
-header > .b {
+.b {
 	grid-area: 2 / 1 / 2 / 1;
 	padding: 0 7%;
 	width: 16%;
 	background-color: #84458793;
 }
-header > .b > div {
+.b > div {
 	background-color: #89ba66;
 	padding: 0% 10%;
 	height: 100%;
@@ -171,6 +175,14 @@ section > article > div {
 }
 section > article > div > p {
 	padding: 5%;
+}
+section > article > div > p > a {
+	color: #d4d08c;
+}
+.disclaimer {
+	padding: 1% 5%;
+	display: flex;
+	justify-content: right;
 }
 /* Adding style to Footer */
 .fcontent {
@@ -201,7 +213,7 @@ footer > ul > li {
 	background-color: #aece97;
 }
 /* Adding style to images */
-#logo1, #logo2 {
+#logo {
 	width: 50%;
 }
 #banner, #strawberry, #multiflavour, #serious {
@@ -240,14 +252,14 @@ footer > ul > li {
 	section > article :nth-child(1) {
 		margin-bottom: -1%;
 	}
-	section > .m-article {
+	.m-article {
 		position: relative;
 	}
-	section > .m-article > .content {
+	.m-article > .content {
 		position: relative;
 		top: 100%
 	}
-	section > .m-article > .image {
+	.m-article > .image {
 		position: relative;
 		top: -100%
 	}
@@ -261,5 +273,8 @@ footer > ul > li {
 	}
 	.fsocial-media > li > div {
 		padding: 10%;
+	}
+	#logo {
+		 width: 25%;
 	}
 }

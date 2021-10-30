@@ -49,6 +49,9 @@ table {
 body {
 	font-family: 'Roboto Slab', serif;
 }
+picture {
+	margin-bottom: -0.4%;
+}
 header {
 	font-family: 'Space Grotesk', sans-serif;
 	display: flex;
@@ -283,9 +286,6 @@ footer > ul > li {
 	}
 	section > article > div {
 		width: 100%;
-	}	
-	section > article :nth-child(1) {
-		margin-bottom: -1%;
 	}
 	.m-article {
 		position: relative;

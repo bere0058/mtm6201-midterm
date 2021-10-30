@@ -68,6 +68,24 @@ footer {
 a {
 	font-family: 'Poppins', sans-serif;
 	color: #844587;
+	animation: a-back 0.5s forwards;
+}
+a:hover {
+	animation:  a-go 0.5s forwards;
+}
+/* Adding animation to Links */
+@keyframes a-go {
+	100% {
+		color: #d4d08c;
+	}
+}
+@keyframes a-back {
+	0% {
+		color: #d4d08c;
+	}
+	100% {
+		color: #844587;
+	}
 }
 h1, h2, h3, h4 {
 	justify-content: center;
@@ -89,7 +107,7 @@ h2 > b {
 	font-weight: bold;
 }
 h3 {
-	font-size: 170%;
+	font-size: 130%;
 	background-color: #d4d08c;
 	padding: 4%;
 }
@@ -98,6 +116,25 @@ h4 {
 	padding: 5%;
 	background-color: #2d3b24;
 	color: #89ba66;
+	animation: h4-back 0.5s forwards;
+}
+h4:hover {
+	animation: h4-go 0.5s forwards;
+}
+/* Adding animation to H4 */
+@keyframes h4-back {
+	0% {
+		background-color: #89ba66;
+	}
+	100% {
+		color: #89ba66;
+	}
+}
+@keyframes h4-go {
+	100% {
+		background-color: #89ba66;
+		color: #844587;
+	}
 }
 /* Adding style to both desktop and mobile version */
 /* style for Nav */
@@ -120,8 +157,7 @@ nav {
 	text-underline-offset: 50%;
 }
 .navcontent > li :hover {
-	cursor: pointer;
-	background-color: #d4d08c;
+	cursor: pointer;	
 }
 /* style for Banner */
 header {
@@ -132,7 +168,7 @@ header {
 	grid-template-columns: repeat(1, 1fr);
 	justify-items: end;
 }
-header > img {
+header > picture {
 	height: fit-content;
 	grid-area: 1 / 1 / 3 / 1;
 }
@@ -176,10 +212,9 @@ section > article > div {
 section > article > div > p {
 	padding: 5%;
 }
-section > article > div > p > a {
-	color: #d4d08c;
-}
 .disclaimer {
+	background-color: white;
+	color: black;
 	padding: 1% 5%;
 	display: flex;
 	justify-content: right;
@@ -262,6 +297,9 @@ footer > ul > li {
 	.m-article > .image {
 		position: relative;
 		top: -100%
+	}
+	.disclaimer {
+		justify-content: center;
 	}
 	/* Adding style to Footer */
 	footer {

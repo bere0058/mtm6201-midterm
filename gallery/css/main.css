@@ -70,7 +70,6 @@ nav {
 }
 .navcontent > li :hover {
 	cursor: pointer;
-	background-color: #d4d08c;
 }
 /* Adding style to Header */
 header {
@@ -80,10 +79,35 @@ header {
 	color: #3a243b;
 	justify-content: center;
 	padding: 5%;
+	animation: header-back 0.5s;
+}
+header:hover {
+	color: aliceblue;
+	animation: header-go 0.5s forwards;
+}
+.a {
+	width: 30%;
+}
+/* Adding animation to Header */
+@keyframes header-back {
+	0% {
+		color: aliceblue;
+		background-color: black;
+	}
+	100% {
+		color: black;
+		background-color: none;
+	}
+}
+@keyframes header-go {
+	100% {
+		background-color: black;
+		color: white;
+	}
 }
 /* Adding style to Content */
 section {
-	padding: 0 5%;
+	padding: 3% 5%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
     gap: 5%;
@@ -127,14 +151,54 @@ footer > ul > li {
 	border-radius: 50%;
 	background-color: #89ba66;
 }
+.fa {
+	animation: icons-back 0.5s forwards;	
+}
 .fa:hover {
 	cursor: pointer;
-	background-color: #aece97;
+	animation: icons-go 0.5s forwards;
+}
+/* Adding animation to Footer icons */
+@keyframes icons-back {
+	0% {
+		background-color: #844587;
+		color: #89ba66;
+	}
+	100% {
+		background-color: #89ba66;
+	}
+}
+@keyframes icons-go {
+	0% {
+		color: black;
+	}
+	100% {
+		background-color: #844587;
+		color: #89ba66;
+	}
 }
 /* Adding style to links and titles */
 a {
 	font-family: 'Poppins', sans-serif;
 	color: #844587;
+	animation: a-back 0.5s forwards;
+}
+a:hover {
+	animation:  a-go 0.5s forwards;
+}
+/* Adding animation to Links */
+@keyframes a-go {
+	100% {
+		color: #d4d08c;
+	}
+}
+@keyframes a-back {
+	0% {
+		color: #d4d08c;
+	}
+	100% {
+		color: #844587;
+	}
 }
 h1, h2, h3, h4 {
 	justify-content: center;

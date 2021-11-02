@@ -178,7 +178,6 @@ header > div {
 	width: 100%;
 	display: flex;
 	align-items: flex-end;
-	color: whitesmoke;
 }
 header > div > p {
 	color: whitesmoke;
@@ -259,9 +258,31 @@ footer > ul > li {
 	border-radius: 50%;
 	background-color: #89ba66;
 }
+.fa {
+	animation: icons-back 0.5s forwards;	
+}
 .fa:hover {
 	cursor: pointer;
-	background-color: #aece97;
+	animation: icons-go 0.5s forwards;
+}
+/* Adding animation to Footer icons */
+@keyframes icons-back {
+	0% {
+		background-color: #844587;
+		color: #89ba66;
+	}
+	100% {
+		background-color: #89ba66;
+	}
+}
+@keyframes icons-go {
+	0% {
+		color: black;
+	}
+	100% {
+		background-color: #844587;
+		color: #89ba66;
+	}
 }
 /* Adding style to images */
 #logo {
@@ -287,6 +308,10 @@ footer > ul > li {
 	}	
 	header > .b > div {
 		background-color: #89ba6662;
+	}
+	header > div > p {
+		color: black;
+		background-color: #f5f5f57a;
 	}
 	/* Adding style to Flavour section */
 	section {

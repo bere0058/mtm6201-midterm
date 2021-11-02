@@ -121,6 +121,11 @@ section > article > div {
 	display: grid;
 	align-items: center;
 }
+section > article > .img-div {
+	display: flex;
+	flex-direction: column;
+	font-size: 70%;
+}
 section > article > div :nth-child(2n) {
 	grid-column-start: 2;
 	text-align: center;
@@ -131,11 +136,6 @@ section > article > div > h3 {
 section > article > div > p {
 	padding: 5%;
 	align-self: center;
-}
-.disclaimer {
-	padding: 1% 5%;
-	display: flex;
-	justify-content: right;
 }
 /* Adding style to Footer */
 footer {

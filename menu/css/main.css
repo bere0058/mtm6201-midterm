@@ -58,6 +58,7 @@ header {
 	justify-content: center;
 	padding: 5%;
 	animation: header-back 0.5s;
+	max-width: calc(1920px - 10%);
 }
 header:hover {
 	color: aliceblue;
@@ -87,6 +88,7 @@ header:hover {
 nav {	
 	padding: 3% 0 2% 0;
 	background-color: #548635;
+	max-width: 1920px;
 } 
 .navcontent {
 	display: grid;
@@ -110,6 +112,7 @@ section {
 	padding: 3% 5%;
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
+	max-width: calc(1920px - 10%);
 }
 section > article {	
 	display: grid;
@@ -146,6 +149,7 @@ footer {
 	background-color: #89ba66;
 	padding: 2% 6%;
 	text-align: center;
+	max-width: calc(1920px - 12%);
 }
 .fcontent {
 	width: 70%;
@@ -227,10 +231,10 @@ h1, h2, h3, h4 {
 	font-weight: bold;
 }
 h1 {
-	font-size: 200%;
+	font-size: 5.5vw;
 }
 h2 {
-	font-size: 180%;
+	font-size: 4vw;
 	font-weight: normal;
 	align-content: center;
 }
@@ -239,7 +243,7 @@ h2 > b {
 	font-weight: bold;
 }
 h3 {
-	font-size: 130%;
+	font-size: 3.5vw;
 	background-color: #d4d08c;
 	padding: 4%;
 	animation: h3-back 0.5s forwards;
@@ -279,7 +283,16 @@ h4 {
 /* setting up media queries */
 @media screen and (max-width: 768px) {
 	body {
-		font-size: 120%;
+		font-size: 3.5vw;
+	}
+	h2 {
+		font-size: 6vw;
+	}
+	h3 {
+		font-size: 5vw;
+	}
+	h4 {
+		font-size: 4vw;
 	}
 	/* Adding style to Nav */
 	.navcontent {

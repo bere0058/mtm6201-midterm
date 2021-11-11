@@ -247,6 +247,7 @@ h3 {
 	background-color: #d4d08c;
 	padding: 4%;
 	animation: h3-back 0.5s forwards;
+	line-height: 7vw;
 }
 h3:hover {
 	animation: h3-go 0.5s forwards;
@@ -283,16 +284,26 @@ h4 {
 /* setting up media queries */
 @media screen and (max-width: 768px) {
 	body {
-		font-size: 3.5vw;
+		font-size: 3.2vw;
+		line-height: 6vw;
+	}
+	h1 {
+		font-size: 8vw;
+		line-height: 11vw;
+		padding: 0 30%;
+	}
+	picture {
+		margin-bottom: -1.8vw;
 	}
 	h2 {
 		font-size: 6vw;
+		line-height: 10vw;
 	}
 	h3 {
-		font-size: 5vw;
+		font-size: 4.5vw;
 	}
 	h4 {
-		font-size: 4vw;
+		font-size: 3.7vw;
 	}
 	/* Adding style to Nav */
 	.navcontent {

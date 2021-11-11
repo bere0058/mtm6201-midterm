@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-size: 26px;
+	font-size: 2vw;
 }
 ol, ul {
 	list-style: none;
@@ -250,16 +250,26 @@ header > .a {
 @media screen and (max-width: 768px) {
     /* Adding style to mobile version */
     body {
-		font-size: 3.5vw;
+		font-size: 3.2vw;
+		line-height: 6vw;
+	}
+	h1 {
+		font-size: 8vw;
+		line-height: 11vw;
+		padding: 0 30%;
+	}
+	picture {
+		margin-bottom: -1.8vw;
 	}
 	h2 {
 		font-size: 6vw;
+		line-height: 10vw;
 	}
 	h3 {
-		font-size: 5vw;
+		font-size: 4.5vw;
 	}
 	h4 {
-		font-size: 4vw;
+		font-size: 3.7vw;
 	}
     /* Adding style to Nav */
     .navcontent {

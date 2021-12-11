@@ -1,16 +1,85 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, a,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+a,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -20,45 +89,68 @@ time, mark, audio, video {
 	text-decoration: none;
 	color: unset;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 	font-size: 2vw;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* End css resset */
 /* Adding style to main sections */
 body {
 	font-family: 'Roboto Slab', serif;
 	line-height: 3.5vw;
 }
+
 picture {
 	margin-bottom: -1.07vw;
 }
+
 header {
 	font-family: 'Space Grotesk', sans-serif;
 	display: flex;
 	flex-wrap: wrap;
 	color: #3a243b;
 }
+
 footer {
 	font-family: 'Roboto Condensed', sans-serif;
 	display: flex;
@@ -69,30 +161,39 @@ footer {
 	text-align: center;
 	max-width: calc(1920px - 12%);
 }
+
 /* Adding style to links and titles */
 a {
 	font-family: 'Poppins', sans-serif;
 	color: #844587;
 	animation: a-back 0.5s forwards;
 }
+
 a:hover {
-	animation:  a-go 0.5s forwards;
+	animation: a-go 0.5s forwards;
 }
+
 /* Adding animation to Links */
 @keyframes a-go {
 	100% {
 		color: #d4d08c;
 	}
 }
+
 @keyframes a-back {
 	0% {
 		color: #d4d08c;
 	}
+
 	100% {
 		color: #844587;
 	}
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
 	justify-content: center;
 	text-align: center;
 	display: flex;
@@ -101,23 +202,28 @@ h1, h2, h3, h4 {
 	line-height: 9vw;
 	align-content: center;
 }
+
 h1 {
 	font-size: 5.5vw;
 }
+
 h2 {
 	font-size: 4vw;
 	font-weight: normal;
 	line-height: 5.5vw;
 }
-h2 > b {
+
+h2>b {
 	color: #844587;
 	font-weight: bold;
 }
+
 h3 {
 	font-size: 3.5vw;
 	background-color: #d4d08c;
 	padding: 4%;
 }
+
 h4 {
 	font-size: 3vw;
 	padding: 5%;
@@ -125,38 +231,45 @@ h4 {
 	color: #89ba66;
 	animation: h4-back 0.5s forwards;
 }
+
 h4:hover {
 	animation: h4-go 0.5s forwards;
 }
+
 /* Adding animation to H4 */
 @keyframes h4-back {
 	0% {
 		background-color: #89ba66;
 	}
+
 	100% {
 		color: #89ba66;
 	}
 }
+
 @keyframes h4-go {
 	100% {
 		background-color: #89ba66;
 		color: #844587;
 	}
 }
+
 /* Adding style to both desktop and mobile version */
 /* style for Nav */
-nav {	
+nav {
 	padding: 3% 0 2% 0;
 	background-color: #548635;
 	max-width: 1920px;
 }
+
 .navcontent {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
-.navcontent > li {
+
+.navcontent>li {
 	padding: 3% 6% 6% 6%;
-	background-color:#89ba66;
+	background-color: #89ba66;
 	color: #844587;
 	display: flex;
 	justify-content: center;
@@ -164,9 +277,11 @@ nav {
 	text-decoration: underline 40%;
 	text-underline-offset: 50%;
 }
-.navcontent > li :hover {
-	cursor: pointer;	
+
+.navcontent>li :hover {
+	cursor: pointer;
 }
+
 /* style for Banner */
 header {
 	position: relative;
@@ -177,7 +292,8 @@ header {
 	justify-items: end;
 	max-width: 1920px;
 }
-header > div {
+
+header>div {
 	position: absolute;
 	grid-area: 2 / 1 / 2 / 1;
 	height: 100%;
@@ -185,58 +301,71 @@ header > div {
 	display: flex;
 	align-items: flex-end;
 }
-header > div > p {
+
+header>div>p {
 	color: whitesmoke;
 	background-color: rgba(0, 0, 0, 0.384);
 }
-header > picture {
+
+header>picture {
 	height: fit-content;
 	grid-area: 1 / 1 / 3 / 1;
 }
+
 .bann {
 	display: flex;
 	align-items: center;
 }
+
 .a {
 	grid-area: 1 / 1 / 1 / 1;
 	background-color: #9baa59a1;
 	width: 30%;
 }
+
 .b {
 	grid-area: 2 / 1 / 2 / 1;
 	padding: 0 7%;
 	width: 16%;
 	background-color: #84458793;
 }
-.b > div {
+
+.b>div {
 	background-color: #89ba66;
 	padding: 0% 10%;
 	height: 100%;
 	display: flex;
 }
+
 /* style for New Flavour section */
 .titles {
 	max-width: 1920px;
 }
+
 section {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
 	max-width: 1920px;
 }
+
 section :nth-child(3) {
 	box-shadow: 0px 15px 15px -15px #111;
 }
-section > article {	
+
+section>article {
 	display: flex;
 }
-section > article > div {
+
+section>article>div {
 	background-color: #844587;
 	color: aliceblue;
 	width: 50%;
 }
-section > article > div > p {
+
+section>article>div>p {
 	padding: 8% 5%;
 }
+
 .disclaimer {
 	background-color: white;
 	color: black;
@@ -244,22 +373,28 @@ section > article > div > p {
 	display: flex;
 	justify-content: right;
 }
+
 /* Adding style to Footer */
 .fcontent {
 	width: 70%;
 }
+
 .fsocial-media {
 	width: 30%;
 }
-.fcontent, .fsocial-media {
+
+.fcontent,
+.fsocial-media {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 3%;
 }
-footer > ul > li {
+
+footer>ul>li {
 	align-self: center;
 }
-.fsocial-media > li > div {
+
+.fsocial-media>li>div {
 	padding: 20%;
 	font-size: 100%;
 	font-weight: bold;
@@ -268,120 +403,153 @@ footer > ul > li {
 	border-radius: 50%;
 	background-color: #89ba66;
 }
+
 .fa {
-	animation: icons-back 0.5s forwards;	
+	animation: icons-back 0.5s forwards;
 }
+
 .fa:hover {
 	cursor: pointer;
 	animation: icons-go 0.5s forwards;
 }
+
 /* Adding animation to Footer icons */
 @keyframes icons-back {
 	0% {
 		background-color: #844587;
 		color: #89ba66;
 	}
+
 	100% {
 		background-color: #89ba66;
 	}
 }
+
 @keyframes icons-go {
 	0% {
 		color: black;
 	}
+
 	100% {
 		background-color: #844587;
 		color: #89ba66;
 	}
 }
+
 /* Adding style to images */
 #logo {
 	width: 50%;
 }
-#banner, #strawberry, #multiflavour, #serious {
+
+#banner,
+#strawberry,
+#multiflavour,
+#serious {
 	width: 100%;
 }
+
 /* setting up media queries */
 @media screen and (max-width: 768px) {
 	body {
 		font-size: 3.2vw;
 		line-height: 6vw;
 	}
+
 	h1 {
 		font-size: 8vw;
 		line-height: 11vw;
 		padding: 0 30%;
 	}
+
 	picture {
 		margin-bottom: -1.8vw;
 	}
+
 	h2 {
 		font-size: 6vw;
 		line-height: 10vw;
 		padding: 0 10%;
 		background-color: #89ba6681;
 	}
+
 	h3 {
 		font-size: 4.5vw;
 	}
+
 	h4 {
 		font-size: 3.7vw;
 	}
+
 	/* Adding style to Nav */
 	.navcontent {
 		grid-template: repeat(3, 1fr) / 1fr;
 	}
+
 	/* Adding style to Banner */
-	header > .bann {
+	header>.bann {
 		width: 100%;
 		justify-content: center;
 		padding: 0;
-	}	
-	header > .b > div {
+	}
+
+	header>.b>div {
 		background-color: #89ba6662;
 	}
-	header > div > p {
+
+	header>div>p {
 		color: black;
 		background-color: #f5f5f57a;
 	}
+
 	/* Adding style to Flavour section */
 	section {
 		grid-template-rows: repeat(3, 1fr);
 	}
-	section > article {
+
+	section>article {
 		grid-template-rows: repeat(2, 1fr);
 		display: grid;
 
 	}
-	section > article > div {
+
+	section>article>div {
 		width: 100%;
 	}
+
 	.m-article {
 		position: relative;
 	}
-	.m-article > .content {
+
+	.m-article>.content {
 		position: relative;
 		top: 100%
 	}
-	.m-article > .image {
+
+	.m-article>.image {
 		position: relative;
 		top: -100%
 	}
+
 	.disclaimer {
 		justify-content: center;
 	}
+
 	/* Adding style to Footer */
 	footer {
 		display: grid;
 		grid-template-rows: repeat(2, 1fr);
 	}
-	.fcontent, .fsocial-media {
+
+	.fcontent,
+	.fsocial-media {
 		width: 100%;
 	}
-	.fsocial-media > li > div {
+
+	.fsocial-media>li>div {
 		padding: 10%;
 	}
+
 	#logo {
-		 width: 25%;
+		width: 25%;
 	}
 }
